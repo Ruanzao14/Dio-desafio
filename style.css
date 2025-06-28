@@ -1,0 +1,108 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+a {
+    color: #006400; /* Verde escuro, estilo campo de futebol */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.bar {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #006400;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border-right: solid 1px #cdcdcd;
+    padding-right: 15px;
+}
+
+.sidebar h2 {
+    color: #2e8b57;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main h1 {
+    color: #228B22;
+    font-size: 32px;
+    margin-bottom: 1rem;
+}
+
+.main h2 {
+    color: #2e8b57;
+    margin-top: 2rem;
+}
+
+.main p, .main ul {
+    line-height: 1.6;
+}
+
+.anchors {
+    grid-area: anchors;
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+.anchors h2 {
+    color: #2e8b57;
+}
+
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    background-color: #e9ecef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    font-size: 14px;
+}
+
+.logo {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+figure {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
